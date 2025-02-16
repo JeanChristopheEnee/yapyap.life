@@ -8,4 +8,7 @@
 *.cache/
 bin/
 obj/
+# Exclure les fichiers volumineux
+*.zip
+*.x86_64
 
