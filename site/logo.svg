@@ -1,0 +1,22 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dégradé animé -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff">
+        <animate attributeName="stop-color" values="#ff00ff; #00ffff; #ff00ff" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#00ffff">
+        <animate attributeName="stop-color" values="#00ffff; #ff00ff; #00ffff" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Lien cliquable -->
+  <a href="https://yapyap.life" target="_blank">
+    <text x="50" y="60" font-size="40" font-weight="bold" fill="url(#textGradient)" font-family="Arial, sans-serif">
+      yAp yAp
+      <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="1.5s" repeatCount="indefinite"/>
+    </text>
+  </a>
+</svg>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yAp yAp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="yAp yAp, l'application qui relie les personnes...">
+    <meta property="og:title" content="yAp yAp">
+    <meta property="og:description" content="yAp yAp, l'application qui relie les personnes...">
+    <meta property="og:image" content="images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Logo PNG avec effet d'apparition -->
+            <img src="images/logo.png" alt="Logo de yAp yAp" class="logo fade-in">
+
+            <!-- Titre principal animé -->
+            <h1 class="animated-title">yAp yAp</h1>
+
+            <!-- Texte animé "yAp yAp" avec effet d'écriture -->
+            <a href="https://yapyap.life" target="_blank" class="svg-link">
+                <svg width="100%" height="120" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg" aria-label="yAp yAp">
+                    <defs>
+                        <!-- Dégradé animé -->
+                        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#ff00ff">
+                                <animate attributeName="stop-color" values="#ff00ff; #00ffff; #ff00ff" dur="3s" repeatCount="indefinite"/>
+                            </stop>
+                            <stop offset="100%" stop-color="#00ffff">
+                                <animate attributeName="stop-color" values="#00ffff; #ff00ff; #00ffff" dur="3s" repeatCount="indefinite"/>
+                            </stop>
+                        </linearGradient>
+                    </defs>
+                    <!-- Effet d'écriture SVG avec glow -->
+                    <text x="50%" y="60" text-anchor="middle" font-size="50" font-weight="bold" fill="none" stroke="url(#textGradient)" 
+                          stroke-width="2" font-family="Poppins, sans-serif"
+                          stroke-dasharray="250" stroke-dashoffset="250" stroke-linecap="round" class="svg-text">
+                        yAp yAp
+                        <animate attributeName="stroke-dashoffset" from="250" to="0" dur="4s" fill="freeze"/>
+                    </text>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <p>Bienvenue sur <a href="https://yapyap.life" target="_blank">yAp yAp</a>, la seule application qui relie les personnes... En construction 🚧</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blues Softwares SAS. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+

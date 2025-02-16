@@ -1,0 +1,3 @@
+/home/white-wolf/Documents/yapyap.life/build/CMakeFiles/YapyapLife.dir
+/home/white-wolf/Documents/yapyap.life/build/CMakeFiles/edit_cache.dir
+/home/white-wolf/Documents/yapyap.life/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,144 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Structure de la page */
+body {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #6a0dad, #ff00ff);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* ---- HEADER ---- */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInHeader 1.5s ease-in-out;
+}
+
+/* ---- LOGO ---- */
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1.5s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* ---- TITRE ANIMÉ ---- */
+.animated-title {
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInText 2s ease-in-out 0.5s forwards;
+}
+
+/* ---- TEXTE PRINCIPAL ---- */
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    color: #87CEEB;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInText 1.5s ease-in-out 0.5s forwards;
+}
+
+/* ---- LIENS ---- */
+a {
+    color: #87CEEB;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ---- SVG INTERACTIF ---- */
+.svg-text {
+    transition: filter 0.3s ease-in-out;
+}
+
+.svg-text:hover {
+    filter: drop-shadow(0px 0px 8px rgba(255, 0, 255, 0.8));
+}
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---- RESPONSIVE DESIGN ---- */
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem;
+        max-width: 90%;
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+    
+    .animated-title {
+        font-size: 24px;
+    }
+}
+
