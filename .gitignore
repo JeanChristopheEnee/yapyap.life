@@ -1,0 +1,14 @@
+# Ignorer les fichiers inutiles de Godot et C#
+.export/
+.import/
+*.import
+*.log
+*.tmp
+*.mono/
+*.cache/
+bin/
+obj/
+# Exclure les fichiers volumineux
+*.zip
+*.x86_64
+
