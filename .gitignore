@@ -8,7 +8,14 @@
 *.cache/
 bin/
 obj/
-# Exclure les fichiers volumineux
+
+# Ignorer les exécutables et fichiers temporaires
+*.exe
+*.dll
+*.log
+*.tmp
+*.cache
 *.zip
+*.tar.gz
 *.x86_64
 
