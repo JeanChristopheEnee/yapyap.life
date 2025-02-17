@@ -1,4 +1,4 @@
-# yApyAp - Plateforme de streaming social basée sur XMPP et Jamulus
+# yAp yAp - Plateforme de streaming social basée sur XMPP et Jamulus
 
 ### Description
 
